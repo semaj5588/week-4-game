@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+	<title>CrystalsCollector</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+</head>	
+	
+<body>
+	<h1 id="game-title">CrystalsCollector!</h1>
+
+	<div class="rules"> 
+		<p>You will be given a random number at the start of the game.</p>
+		<p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p>
+		<p>You win the game by matching your total score to random number, you lose the game if your total score goes above the random number.</p>
+		<p>The value of each crystal is hidden from you until you click on it.</p>
+		<p>Each time the game starts, the game will change the values of each crystal. </p>
+	</div>
+
+	<div class="number">
+		<p><span id="randomNum"></span></p>
+	</div>
+
+	<div class="wins-losses">
+		<p>Wins: <span id="wins">0</span></p>
+		<p>Losses: <span id="losses">0</span></p>
+	</div>
+
+	<div class="gems">
+	<img id="first" class="gem" data-color="red" src="assets/images/red.png">
+	<img id="second" class="gem" data-color="blue" src="assets/images/blue.png"> 
+	<img id="third" class="gem" data-color="yellow" src="assets/images/yellow.png">
+	<img id="fourth" class="gem" data-color="green" src="assets/images/green.png">
+	</div>
+
+	<div class="total-score">Your total score is:</div>
+
+	<div class="score">
+		<p>Score: <span id="totalScore">0</span></p>
+	</div>
+
+
+<footer id="footer">Coding Boot Camp (C) 2015. All Rights Reserved.</footer>
+	<script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+	<script src="assets/javascript/game.js"></script>
+	</body>
+</html>
